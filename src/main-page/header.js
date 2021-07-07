@@ -1,0 +1,18 @@
+import logo from './main-page-logo.png';
+
+import React from 'react'
+
+export default function header() {
+    return (
+        <div>
+            <header className="row">
+                <div className="col-md-5">
+                    <img src={logo} className="logo" alt="logo" />
+                </div>
+                <div className="col-md-7 mt-5 subtitle">
+                    Providing houses all over the world
+                </div>
+            </header>
+        </div>
+    )
+}
