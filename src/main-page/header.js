@@ -2,7 +2,7 @@ import logo from './main-page-logo.png';
 
 import React from 'react'
 
-export default function header() {
+export default function header({ subtitle }) {
     return (
         <div>
             <header className="row">
@@ -10,7 +10,7 @@ export default function header() {
                     <img src={logo} className="logo" alt="logo" />
                 </div>
                 <div className="col-md-7 mt-5 subtitle">
-                    Providing houses all over the world
+                    {subtitle}
                 </div>
             </header>
         </div>
